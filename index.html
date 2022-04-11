@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="./css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 15</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo logo">
+					<img src="img/Logo-Placeholder-5.svg" alt="Logo">
+				</div>
+				<div class="header__navigation">
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__form form-doggie">
+				<div class="form-doggie__container">
+					<form action="#" method="get" class="form-doggie__body forms1">
+						<h1 class="forms1__title">Make an appointment</h1>
+						<div class="forms1__body">
+							<input tabindex="1" class="forms1__input" type="text" name="username" required placeholder="Name">
+							<input tabindex="2" class="forms1__input" type="email" name="useremail" required
+								placeholder="Email">
+							<input tabindex="3" class="forms1__input" type="tel" name="userphone" required placeholder="Phone">
+							<input tabindex="4" class="forms1__input" list="select" type="text" name="userselect" required
+								placeholder="Select Service">
+							<datalist id="select">
+								<option value="Pet Boarding (No Cages)"></option>
+								<option value="Pet Daycare"></option>
+								<option value="Pet Day Spa & Grooming"></option>
+								<option value="Custom Meal Plans"></option>
+								<option value="Pet Training"></option>
+								<option value="Shop Our Store!"></option>
+							</datalist>
+							<textarea required name="usercomment" placeholder="Tell us about your puppers include his/her name"
+								class="forms1__input forms1__textarea"></textarea>
+						</div>
+						<button type="submit" class="forms1__button button">Make an Appointment</button>
+					</form>
+
+				</div>
+			</div>
+			<div class="main__form form-summary">
+				<div class="form-summary__container">
+					<form class="form-summary__form form2">
+						<div class="form2__body">
+							<h1 class="form2__title">Summary</h1>
+							<div class="form2__subtitle">Estimate Shipping and Tax</div>
+							<div class="form2__text">Enter your destination to get a shipping <br> estimate.</div>
+							<label class="form2__label" for="select-count">Country</label>
+							<select name="countrys" id="select-count" class="form2__input">
+								<option value="countrys">Russia</option>
+								<option value="countrys">Ukraine</option>
+								<option value="countrys">Poland</option>
+								<option selected value="countrys">Australia</option>
+								<option value="countrys">America</option>
+								<option value="countrys">Belarus</option>
+								<option value="countrys">England</option>
+								<option value="countrys">Korea</option>
+								<option value="countrys">Japan</option>
+								<option value="countrys">China</option>
+								<option value="countrys">Armenia</option>
+							</select>
+							<label class="form2__label" for="country">State/Province</label>
+							<input autocomplete="off" id="country" class="form2__input" type="text" name="country" required>
+							<label class="form2__label" for="zip">Zip/Postal Code</label>
+							<input id="zip" autocomplete="off" class="form2__input" type="text" name="zip" required>
+							<!--============================================================================================-->
+							<div class="form2__head">Standard Rate</div>
+							<div class="form2__item">
+								<input value="1" id="radio_1" class="form2__radio" type="radio" name="sale">
+								<label class="form2__label form2__label-radio" for="radio_1">Price may vary depending on the
+									item/destination. Shop
+									Staff will contact you. $21.00</label>
+							</div>
+
+							<!--============================================================================================-->
+							<div class="form2__head">Pickup from store</div>
+							<div class="form2__item">
+
+								<input value="2" id="radio_2" class="form2__radio" type="radio" name="sale">
+								<label class="form2__label form2__label-radio" for="radio_2">1234 Street Adress City Address,
+									1234
+									$0.00</label>
+							</div>
+							<label class="form2__label" for="enter-code">Enter discount code</label>
+							<input required placeholder="Enter Discount code" id="enter-code" autocomplete="off"
+								class="form2__input" type="text" name="enter-code">
+							<button class="form2__button" type="submit">Apply Discount</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="question">
+				<div class="question__container">
+					<div class="question__body">
+						<form action="#" class="question__form form-three">
+							<div class="form-three__subtitle">Any questions?</div>
+							<div class="form-three__title">Drop us a line</div>
+							<div class="form-three__body">
+								<div class="form-three__item">
+									<label class="form-three__label" for="user-name">First Name<span>*</span></label>
+
+									<input class="form-three__input" required type="text" name="user-name" id="user-name"
+										placeholder="Your first name">
+								</div>
+								<div class="form-three__item">
+									<label class="form-three__label" for="user-lastname">Last Name<span>*</span></label>
+									<input class="form-three__input" required type="text" name="user-lastname" id="user-lastname"
+										placeholder="Your Last name">
+								</div>
+								<div class="form-three__item">
+									<label class="form-three__label" for="user-email">Email<span>*</span></label>
+									<input class="form-three__input" required type="email" name="user-email" id="user-email"
+										placeholder="Your working email">
+								</div>
+								<div class="form-three__item">
+									<label class="form-three__label" for="user-phone">Phone</label>
+									<input class="form-three__input" required type="tel" name="user-phone" id="user-phone"
+										placeholder="Your phone number">
+								</div>
+								<div class="form-three__item">
+									<label class="form-three__label" for="user-messege">Message<span>*</span></label>
+									<textarea class="form-three__textarea form-three__input" required name="user-messege"
+										id="user-messege" placeholder="Your message"></textarea>
+								</div>
+							</div>
+							<div class="form-three__bottom form-three__checkbox">
+								<input class="form-three__check" required type="checkbox" name="choose" id="check">
+								<label class="form-three__label1" for="check">I agree to receive communications from
+									Createx
+									Online School</label>
+								<button class="form-three__button" type="submit">Send message</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">footer</div>
+		</footer>
+	</div>
+</body>
+
+</html>
