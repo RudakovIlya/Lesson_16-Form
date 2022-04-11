@@ -441,7 +441,7 @@ body {
 
 .form-three__button {
 	flex: 1 1 auto;
-	background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+	background: #f75e05;
 	border-radius: 4px;
 	min-height: 52px;
 	display: inline-flex;
@@ -452,4 +452,12 @@ body {
 	font-size: 16px;
 	letter-spacing: 0.5px;
 	color: #ffffff;
+	transition: all 0.3s ease 0s;
 }
+
+.form-three__button:hover {
+	background-color: #fff;
+	color: #f75e05;
+	transform: translateY(2px);
+}
+
